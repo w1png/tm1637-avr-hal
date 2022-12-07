@@ -2,8 +2,18 @@
 name = "tm1637-avr-hal"
 version = "1.0.0"
 edition = "2018"
+licence = "MIT"
+repository = "https://github.com/w1png/tm1637-avr-hal"
+keywords = ["tm1637", "avr", "hal", "arduino", "embedded", "display"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "TM1637 driver for AVR HAL"
+publish = true
 
 [dependencies.arduino-hal]
 git = "https://github.com/rahix/avr-hal"
 rev = "4170a773d4d76cc93433d2455ed8b14e573ebe70"
 features = ["arduino-uno"]
+version = "0.1.0"
+
+[badges]
+maintenance = { status = "actively-developed" }
