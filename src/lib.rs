@@ -22,7 +22,7 @@ impl TM1637 {
         }
     }
 
-    pub fn start(&mut self) {
+    fn start(&mut self) {
         self.dio.set_high();
         self.clk.set_high();
         (self.delay_ms)(5);
@@ -32,7 +32,7 @@ impl TM1637 {
         (self.delay_ms)(5);
     }
 
-    pub fn stop(&mut self) {
+    fn stop(&mut self) {
         self.clk.set_low();
         self.dio.set_low();
         (self.delay_ms)(5);
@@ -42,7 +42,7 @@ impl TM1637 {
         (self.delay_ms)(5);
     }
 
-    pub fn write_bit(&mut self, bit: bool) {
+    fn write_bit(&mut self, bit: bool) {
         self.clk.set_low();
         if bit {
             self.dio.set_high();
