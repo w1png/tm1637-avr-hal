@@ -1,0 +1,9 @@
+[package]
+name = "tm1637-avr-hal"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies.arduino-hal]
+git = "https://github.com/rahix/avr-hal"
+rev = "4170a773d4d76cc93433d2455ed8b14e573ebe70"
+features = ["arduino-uno"]
