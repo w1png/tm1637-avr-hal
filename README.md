@@ -1,5 +1,5 @@
 # tm1637-avr-hal
-A simple library for inrefacing with the tm1637
+A simple library for interfacing with the tm1637 using [`avr-hal`](https://github.com/Rahix/avr-hal).
 
 ## Example usage
 ```rust
