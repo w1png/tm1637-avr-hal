@@ -54,7 +54,7 @@ impl TM1637 {
         self.clk.set_high();
     }
 
-    pub fn write_value(&mut self, value: u8) {
+    fn write_value(&mut self, value: u8) {
         for i in 0..8 {
             self.clk.set_low();
             (self.delay_ms)(5);
